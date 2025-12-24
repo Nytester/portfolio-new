@@ -1129,6 +1129,23 @@
         --code-type: #0f766e;
       }
 
+            .client-mode-btn {
+        background: transparent;
+        border: 1px solid var(--border-subtle);
+        color: var(--text);
+        font-size: 11px;
+        padding: 4px 10px;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: all 0.15s ease;
+      }
+
+      .client-mode-btn:hover {
+        background: rgba(37, 99, 235, 0.15);
+        border-color: var(--accent);
+        color: var(--accent);
+      }
+
   </style>
 </head>
 <body>
@@ -1166,8 +1183,11 @@
     </div>
     <div>VS Code</div>
     <div class="title-center">Roshan.tsx — Developer Mode</div>
-    <div class="theme-toggle" id="themeToggle">🌙 Dark</div>
+    <div style="display:flex; gap:8px; align-items:center;">
+  <button class="client-mode-btn" id="clientModeBtn">Client Mode</button>
+  <div class="theme-toggle" id="themeToggle">🌙 Dark</div>
   </div>
+    </div>
 
   <!-- Main layout -->
   <div class="main">
@@ -1651,6 +1671,15 @@ Remember: You're here to make a great impression on potential employers, collabo
       }
     });
   }
+
+      const clientModeBtn = document.getElementById('clientModeBtn');
+
+    if (clientModeBtn) {
+      clientModeBtn.addEventListener('click', () => {
+        window.open('client.html', '_blank');
+      });
+    }
+
 
   // ===== TAB CONTENT =====
   const editorContents = {
