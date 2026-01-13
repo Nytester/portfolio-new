@@ -633,6 +633,12 @@
       margin-bottom: 1.5rem;
     }
 
+    .project-card{
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
     .project-card h3 {
       font-size: 1.5rem;
       margin-bottom: 1rem;
@@ -643,6 +649,7 @@
       color: #666;
       line-height: 1.6;
       margin-bottom: 1.5rem;
+      flex-grow: 1;
     }
 
     .project-tags {
@@ -650,6 +657,10 @@
       flex-wrap: wrap;
       gap: 0.5rem;
       margin-bottom: 1.5rem;
+    }
+    
+    .project-links{
+      margin-top: auto;
     }
 
     .tag {
@@ -1153,9 +1164,9 @@ body.dark-mode .hamburger {
           <div class="terminal-dot"></div>
         </div>
         <h3>Namaste :)</h3>
-        <p>I'm Roshan Bhatta, a rising 🎓senior🎓 at University of Louisiana Monroe. As a first-generation computer science student, I have a strong affinity for coding and a deep desire to make a positive impact. I am particularly interested in cloud computing, AI/ML, and data analytics.</p>
-        <p>Apart from my academic pursuits, I enjoy watching movies and series, traveling, trying new foods, and meeting new people. These activities provide me with inspiration and a broader perspective on the world.</p>
-        <p>I will be 👨‍🎓graduating in Fall 2026👨‍🎓, and as a rising senior, I am actively seeking entry-level software engineering roles. I am open to any opportunities that come my way and would be delighted to contribute my skills and knowledge.</p>
+        <p>I'm Roshan Bhatta, a rising 🎓senior🎓 at University of Louisiana Monroe. As a first-generation computer Information science student, I have a strong affinity for analytics and a deep desire to make a positive impact. I am particularly interested in cloud computing, AI/ML, and data analytics.</p>
+        <p>Apart from my academic pursuits, I enjoy playing soccer, connecting with people, and exploring new ideas. These activities provide me with inspiration and a broader perspective on the world.</p>
+        <p>I will be 👨‍🎓graduating in Fall 2026👨‍🎓, and as a rising senior, I am actively seeking entry-level data analyst, AI/ML roles. I am open to any opportunities that come my way and would be delighted to contribute my skills and knowledge.</p>
         <p>Please feel free to reach out to me on LinkedIn or via email at <strong>roshanbhatta1122@gmail.com</strong></p>
       </div>
     </div>
@@ -1165,7 +1176,7 @@ body.dark-mode .hamburger {
   <section id="projects" class="projects-section fade-in">
     <h2>PROJECTS</h2>
     <div class="projects-grid">
-      <div class="project-card" onclick="openModal('StepSight')">
+      <div class="project-card" onclick="openModal('stepsight')">
         <div class="project-icon">🏥</div>
         <h3>StepSight AI</h3>
         <p>ACL injury prevention platform combining MRI analysis, movement tracking, and AI to predict injury risk for athletes.</p>
@@ -1182,7 +1193,7 @@ body.dark-mode .hamburger {
         </div>
       </div>
 
-      <div class="project-card" onclick="openModal('RAGChatbot')">
+      <div class="project-card" onclick="openModal('rag')">
         <div class="project-icon">
           <img src="assets/rag-bot.png" alt="ragbot" width="60" height="60">
         </div>
@@ -1213,6 +1224,26 @@ body.dark-mode .hamburger {
           <button class="btn btn-primary" onclick="alert('Portfolio coming soon!')">View Portfolio</button>
         </div>
       </div>
+
+      <div class="project-card">
+  <div class="project-icon">🧠</div>
+  <h3>Bet-predictor</h3>
+  <p>A Machine Learning–powered sports bet predictor that analyzes match data and predicts outcomes in real time using Streamlit.</p>
+
+  <div class="project-tags">
+    <span class="tag">Python</span>
+    <span class="tag">Scikit-learn</span>
+    <span class="tag">Streamlit</span>
+    <span class="tag">Pandas</span>
+    <span class="tag">NumPy</span>
+  </div>
+
+  <div class="project-links">
+    <button class="btn btn-primary" onclick="event.stopPropagation();">View Code</button>
+    <button class="btn btn-secondary">Case Study</button>
+  </div>
+</div>
+
     </div>
   </section>
 
